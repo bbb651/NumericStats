@@ -1,0 +1,12 @@
+{
+	"name": "NumericStats",
+	"version_number": "0.1.0",
+	"website_url": "https://github.com/bbb651/NumericStats",
+	"descriptions": "",
+	"dependencies": [
+		"BepInEx-BepInExPack_ROUNDS-5.4.1100",
+		"willis81808-UnboundLib-2.2.1",
+		"willis81808-MMHook-1.0.0"
+	]
+}
+
