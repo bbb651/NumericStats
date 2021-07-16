@@ -1,7 +1,4 @@
 ﻿using BepInEx;
-using BepInEx.Logging;
-using UnboundLib;
-using UnityEngine;
 
 namespace NumericStats
 {
@@ -10,9 +7,9 @@ namespace NumericStats
     [BepInProcess("Rounds.exe")]
     public class NumericStats : BaseUnityPlugin
     {
-        private void Awake()
+        private void Start()
         {
-            Logger.Log(LogLevel.Info, "Hello world from NumericStats!");
+            On.CardInfoStat.GetSimpleAmount += (orig, self) => self.amount;
         }
     }
 }
